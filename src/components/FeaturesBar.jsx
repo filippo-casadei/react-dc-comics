@@ -1,4 +1,8 @@
 import FeatureItem1 from "./FeatureItem1.jsx";
+import FeatureItem2 from "./FeatureItem2.jsx";
+import FeatureItem3 from "./FeatureItem3.jsx";
+import FeatureItem4 from "./FeatureItem4.jsx";
+import FeatureItem5 from "./FeatureItem5.jsx";
 
 function FeaturesBar () {
     return (
