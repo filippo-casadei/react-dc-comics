@@ -1,6 +1,6 @@
 function Footer1 () {
     return (
-        <div className="footer1-list">
+        <div className="contenitore-footer1">
             <div>
                 <h4>DC Comics</h4>
                 <ul>

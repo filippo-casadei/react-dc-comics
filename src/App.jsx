@@ -11,6 +11,7 @@ function App() {
     <Hero />
     <FeaturesBar />
     <Footer1 />
+    <Footer2 />
   </>
 };
 
