@@ -1,4 +1,5 @@
 import comics from "../data/comics.js";
+import styles from "./ComixBar.module.css";
 
 function ComixBar() {
     return (
@@ -14,7 +15,7 @@ function creaFumetto() {
     return comics.map(comic => {
         return (
             <div key={comic.id} className="col-2">
-                <img src={comic.thumb}></img>
+                <img className={styles.imgStyle} src={comic.thumb}></img>
                 <p>{comic.series}</p>
             </div>
         )
