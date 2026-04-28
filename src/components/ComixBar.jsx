@@ -3,9 +3,12 @@ import styles from "./ComixBar.module.css";
 
 function ComixBar() {
     return (
-        <div className="container">
+        <div className="container py-5">
             <div className="row">
                 {creaFumetto()}
+            </div>
+            <div className="text-center mt-4">
+                <button className="btn btn-primary">Load More</button>
             </div>
         </div>
     )
