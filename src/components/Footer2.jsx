@@ -1,3 +1,5 @@
+import footerElements from "../data/footerElements";
+
 function Footer2() {
     return (
         <div className="contenitore-footer2">
@@ -7,14 +9,16 @@ function Footer2() {
 
             <div className="socials">
                 <p>FOLLOW US</p>
-                <img src="/footer-facebook.png" />
-                <img src="/footer-twitter.png" />
-                <img src="/footer-youtube.png" />
-                <img src="/footer-pinterest.png" />
-                <img src="/footer-periscope.png" />
+                {createFooterElements()}
             </div>
         </div>
     )
 };
+
+function createFooterElements() {
+    return footerElements.map(element => {
+        return <img key={element.id} src={element.img} />
+    }
+)};
 
 export default Footer2;

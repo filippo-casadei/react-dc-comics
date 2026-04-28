@@ -1,4 +1,4 @@
-import featureBarItems from "../data/FeatureBarItems.js";
+import featureBarItems from "../data/featureBarItems.js";
 
 function FeaturesBar () {
     return (
