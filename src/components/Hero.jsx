@@ -1,7 +1,9 @@
+import styles from "./Hero.module.css";
+
 function Hero() {
     return (
-        <section className="contenuto-hero">
-            <p>--Content Goes Here--</p>
+        <section className={styles.hero}>
+            <img className={styles.jumbotron} src="/jumbotron.png" />
         </section>
     )
 };
