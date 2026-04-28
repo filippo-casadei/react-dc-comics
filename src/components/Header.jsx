@@ -1,3 +1,5 @@
+import elementiNavbar from "../data/elementiNavbar";
+
 function Header() {
     return (
         <header>
@@ -6,20 +8,19 @@ function Header() {
             </div>
             <nav className="contenitore-navbar">
                 <ul>
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="#">Comix</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Collectibles</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Fans</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Shop</a></li>
+                    {creaNavbar()}
                 </ul>
             </nav>
         </header>
     )
+};
+
+function creaNavbar() {
+    return elementiNavbar.map(elemento => {
+        return (
+            <li key={elemento.id}><a href="#">{elemento.title}</a></li>
+        )
+    })
 };
 
 export default Header;
