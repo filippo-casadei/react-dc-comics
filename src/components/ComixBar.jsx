@@ -1,3 +1,4 @@
+/*
 import comics from "../data/comics.js";
 import styles from "./ComixBar.module.css";
 
@@ -27,4 +28,16 @@ function creaFumetto() {
     })
 };
 
-export default ComixBar;
+export default ComixBar; */
+import comics from "../data/comics.js";
+
+function ComixBar() {
+    console.log(comics)
+    
+    return (
+        <div>
+
+        </div>
+    )
+};
+
