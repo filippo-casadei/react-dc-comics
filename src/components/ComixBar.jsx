@@ -1,4 +1,4 @@
-/*
+import ComicCard from "./ComicCard.jsx";
 import comics from "../data/comics.js";
 import styles from "./ComixBar.module.css";
 
@@ -7,16 +7,28 @@ function ComixBar() {
         <div className="container-fluid bg-dark text-white py-5">
             <div className="container">
                 <div className="row">
-                    {creaFumetto()}
+
+                    {comics.map(comic => {
+                        return (
+                            <div className="col-2" key={comic.id}>
+                                <ComicCard comic={comic} />
+                            </div>
+                        );
+                    })}
+
                 </div>
+
                 <div className="text-center mt-4">
                     <button className="btn btn-primary">Load More</button>
                 </div>
             </div>
         </div>
-    )
-};
+    );
+}
 
+export default ComixBar;
+
+/*
 function creaFumetto() {
     return comics.map(comic => {
         return (
@@ -28,9 +40,9 @@ function creaFumetto() {
     })
 };
 
-export default ComixBar; */
+export default ComixBar; 
 import comics from "../data/comics.js";
-import ComicCard from "./ComicCard.jsx";
+
 
 function ComixBar() {
     return comics.map(comic => {
@@ -40,3 +52,4 @@ function ComixBar() {
 
 export default ComixBar;
 
+*/
