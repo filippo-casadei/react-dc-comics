@@ -30,14 +30,13 @@ function creaFumetto() {
 
 export default ComixBar; */
 import comics from "../data/comics.js";
+import ComicCard from "./ComicCard.jsx";
 
 function ComixBar() {
-    console.log(comics)
-    
-    return (
-        <div>
-
-        </div>
-    )
+    return comics.map(comic => {
+        return <ComicCard key={comic.id} comic={comic} />;
+    });
 };
+
+export default ComixBar;
 
