@@ -50,6 +50,8 @@ function Footer1 () {
                     </ul>
                 </div>
             </div>
+                <img className="bgLogo" src="/dc-logo-bg.png"></img>
+                
         </div>
 
     )
